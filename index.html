@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD130</title>
+    <meta name="description" content="The home page for the WDD131 Dynamic Web Fundamentals course from Matias Ponce. It contains basic information about me.">
+    <meta name="author" content="Matias Ponce">
+    <title>WDD131 - Dynamic Web Fundamentals - Matias Ponce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <span id="course-title">WDD131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="www.linkedin.com/in/matip31">My LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">My Favorite Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Matias Ponce</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <div>
+                <p>
+                    My name is Matias Ponce, I am from Montevideo, Uruguay. I love drinking Mate and eating Asado as any good uruguayan.
+                    I am currently engaged to a wonderful woman called Lucia, we will get married on february. I am working as a 
+                    IT Help Desk, I like it.
+                </p>
+                <img id="profile"  src="images/matias-ponce-image.jpeg" alt="Matias Profile">
+            </div>
+            <h3>Montevideo, Uruguay</h3>
+            <div>
+                <figure>
+                    <img id="flag" src="images/uruguay-flag.png" alt="uruguay flag">
+                    <figcaption>Official Flag of Uruguay</figcaption>
+                </figure>
+                <p>Uruguay is a beautiful little country in South America. It is know for its Football Players around the world,
+                    and its culture of drinking mate and eating asado.
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/">MDN Web Docs</a>
+                </li>
+                <li>
+                    <a href="https://www.udemy.com/">Udemy</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/">W3Schools</a>
+                </li>
+                <li>
+                    <a href="https://css-tricks.com/">CSS Tricks</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Matias Ponce | Uruguay
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
