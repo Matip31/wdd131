@@ -1,0 +1,22 @@
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+	nav ul {
+        display: flex;
+		flex-direction: row;
+        gap: 1rem;
+	}
+    #ham{
+        display: none;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+        position: static;
+    }
+}

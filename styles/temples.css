@@ -1,0 +1,94 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+header{
+    background-color: #0d3b66;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+
+}
+nav a:hover{
+    background-color: white;
+    color: #0d3b66;
+}
+main{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #0d3b66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+footer p{
+    margin: 5px;
+}
+img{
+    width: 250px;
+    height: auto;
+}
+.container{
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 25px;
+	place-items: center;
+}
+.div-container{
+    position: relative;
+}
+.navigation{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #0d3b66;
+    top: 3rem;
+    
+}
+
+.navigation.open{
+    display: flex;
+    flex-direction: column;
+}
+#ham {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px 10px;
+    right: 1rem;
+}
+#ham::before{
+    content: "☰";
+}
+#ham.open::before{
+    content: "✖";
+}
+
+#lastModified{
+    color: yellow;
+    font-size: 0.9rem;
+}
