@@ -1,3 +1,7 @@
+:root{
+    --primary-color:lightskyblue;
+    --secondary-color:darkblue;
+}
 *{
     margin:0;
     padding: 0;
@@ -8,13 +12,13 @@ body{
     font-weight: 400;
 }
 header{
-    background: lightskyblue;
+    background: var(--primary-color);
     padding: 1rem;
     text-align: center;
 }
 header h1{
     display: inline-block;
-    border: 1px solid darkblue;
+    border: 1px solid var(--secondary-color);
     padding: 0.5rem 2rem;
 }
 footer{
@@ -34,10 +38,10 @@ footer{
     gap: 1rem;
 }
 .card{
-    border: 1px solid blue;
+    border: 1px solid var(--secondary-color);
     padding: 1rem;
     margin:0 1rem;
-    background: lightskyblue;
+    background: var(--primary-color);
     justify-items: center;
 
 }

@@ -22,4 +22,10 @@
         padding: 1rem;
         width: 200px;
     }
+    .weather .icon{
+        display: none;
+    }
+    .weather h2::after{
+        content:" ⛅";
+    }
 }
