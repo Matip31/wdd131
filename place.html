@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this page contains information about Maceio, a city located in Alagoas, Brazil. It has some information about the city, and also a description with the typical weather.">
+    <meta name="author" content="Matias Ponce">
+    <title>Maceio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Maceió</h1>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <picture>
+                <source media="(max-width:768px)" srcset="images/maceio-small.webp">
+                <img src="images/maceio-large.webp" alt="Maceio Water">
+            </picture>
+        </section>
+        <section class="data card">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area:</th>
+                    <td>509 km²</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>957,916</td>
+                </tr>
+                <tr>
+                    <th>Best Beach:</th>
+                    <td>Ponta Verde</td>
+                </tr>
+                <tr>
+                    <th>Language:</th>
+                    <td>Portuguese</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Brazilian Real (BRL)</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC-3</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+55</td>
+                </tr>
+            </table>
+        </section>
+        <section class="weather card">
+            <div class="weather-title">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="weather icon">
+            </div>
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td>32°C</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Sunny</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td>10 Km/h</td>
+                </tr>
+                <tr>
+                    <th>Wind Chill:</th>
+                    <td id="wind-chill"></td>
+                    </tr>
+            </table>
+
+        </section>
+    </main>
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Matias Ponce | Uruguay
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

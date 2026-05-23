@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px){
+    .container{
+        position: relative;
+    }
+    .hero img{
+        height: 70vh;
+        object-fit: cover;
+        display: block;
+        width: 100%;
+    }
+    .data{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        padding: 1rem;
+        width: 200px;
+    }
+    .weather{
+        position: absolute;
+        right: 40px;
+        bottom: 40px;
+        padding: 1rem;
+        width: 200px;
+    }
+}

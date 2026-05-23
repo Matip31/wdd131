@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+header{
+    background: lightskyblue;
+    padding: 1rem;
+    text-align: center;
+}
+header h1{
+    display: inline-block;
+    border: 1px solid darkblue;
+    padding: 0.5rem 2rem;
+}
+footer{
+    background-color: #0d3b66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+.hero img{
+    width: 100%;
+    display: block;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card{
+    border: 1px solid blue;
+    padding: 1rem;
+    margin:0 1rem;
+    background: lightskyblue;
+    justify-items: center;
+
+}
+.card h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.weather img{
+    width: 50px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+.weather-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
