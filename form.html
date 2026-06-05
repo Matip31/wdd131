@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page contains a form that allows the user to review a certain product">
+    <meta name="author" content="Matias Ponce">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>Product Review Form</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="productName">Product Name</label>
+            <select name="productName" id="productName" required>
+                <option value="placeholder" disabled selected>Select a Product...</option>
+            </select>
+            <fieldset class="rating">
+                <legend>Overall Rating</legend>
+                <label><input type="radio" id="rating1" name="rating" value="1" required>☆</label>
+                <label><input type="radio" id="rating2" name="rating" value="2" required>☆☆</label>
+                <label><input type="radio" id="rating3" name="rating" value="3" required>☆☆☆</label>
+                <label><input type="radio" id="rating4" name="rating" value="4" required>☆☆☆☆</label>
+                <label><input type="radio" id="rating5" name="rating" value="5" required>☆☆☆☆☆</label>
+            </fieldset>
+            <label for="date">Date of installation</label>
+            <input type="date" id="date" name="date" required>
+            <fieldset class="features">
+                <legend>Which features did you find useful in the product?</legend>
+                <small><em>Check all that apply</em></small>
+                <label><input type="checkbox" id="durability" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" id="ease" name="features" value="easeOfUse">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features" value="performance">Performance</label>
+                <label><input type="checkbox" id="design" name="features" value="design">Design</label>
+            </fieldset>
+            <div>
+                <label for="review">Written Review</label>
+                <small>(optional)</small>
+                <textarea name="review" id="review"></textarea>
+            </div>
+            <div>
+                <label for="name">Your Name</label>
+                <small>(optional)</small>
+                <input type="text" name="name" id="name">
+            </div>
+            <input type="submit" value="Send Review"  id="submit">
+        </form>
+
+    </main>
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Matias Ponce | Uruguay
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
