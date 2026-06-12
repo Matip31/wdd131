@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This site is the main page for a Mate Store, which contains information about the store, the products and also a way to contact us">
+    <meta name="author" content="Matias Ponce">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>MateMatiCrazy</title>
+    <script src="scripts/mate.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="images/MateMatiCrazy-logo.webp" alt="Store Logo">
+            <h1>MateMatiCrazy</h1>
+        </div>
+        <button id="ham"></button>
+        <div class="div-container">
+            <nav>
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html" id="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html" id="products">Products</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" id="contactUs">Contact Us!</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <picture>
+                <source media="(max-width:767px)" srcset="images/mate-about.webp">
+                <img src="images/background-mate.webp" alt="background-mate">
+            </picture>
+        </section>
+        <section class="about card">
+            <h2>About Us</h2>
+            <p>We are a traditional Uruguayan Mate store. Our love for the mate is as deep as love can be. We recognize the tradition of drinking a good mate to start the routine, or maybe to study or work. Therefore, we have the best products to give you the best experience.</p>
+            <img src="images/mate-about.webp" alt="Sharing Mate">
+        </section>
+        <section class="featured card">
+            <h2>Featured Products</h2>
+            <div class="product-container">
+                <figure>
+                    <img src="images/imperial-mate.webp" alt="imperial mate">
+                    <figcaption>Imperial Mate</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/thermus-messi.webp" alt="thermos messi">
+                    <figcaption>Messi Thermos</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/matera-cuero.webp" alt="matera leather">
+                    <figcaption>Leather Matera</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/imperial-mate-2.webp" alt="imperial mate 2">
+                    <figure>Brown Imperial Mate</figure>
+                </figure>
+                <figure>
+                    <img src="images/thermus.webp" alt="thermos">
+                    <figure>Amazing Thermos</figure>
+                </figure>
+                <figure>
+                    <img src="images/matera-wood.webp" alt="Wood Matera">
+                    <figure>Wooden Matera</figure>
+                </figure>
+            </div>
+        </section>
+        <a href="products.html" class="view">View Products</a>
+    </main>
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Matias Ponce | Uruguay
+        </p>
+    </footer>
+</body>
+</html>

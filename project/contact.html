@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This site is the main page for a Mate Store, which contains information about the store, the products and also a way to contact us">
+    <meta name="author" content="Matias Ponce">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>MateMatiCrazy</title>
+    <script src="scripts/mate.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="images/MateMatiCrazy-logo.webp" alt="Store Logo">
+            <h1>MateMatiCrazy</h1>
+        </div>
+        <button id="ham"></button>
+        <div class="div-container">
+            <nav>
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html" id="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html" id="products">Products</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" id="contactUs">Contact Us!</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <picture>
+                <img src="images/background-mate.webp" alt="background-mate" id="bck">
+            </picture>
+        </section>
+        <section class="contact">
+            <h2>Contact Us!</h2>
+            <form action="thanks.html" method="get">
+                <div>
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <label for="reason">Reason of Contact</label>
+            <select name="reason" id="reason" required>
+                <option value="" disabled selected>Select a Reason...</option>
+                <option value="price">Product Price</option>
+                <option value="delivery">Delivery</option>
+                <option value="availability">Product Availability</option>
+                <option value="other">Other</option>
+            </select>
+            <div>
+                <label for="message">Message:</label>
+                <textarea name="messa" id="message" required></textarea>
+            </div>
+            <input type="submit" value="Send Message" id="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Matias Ponce | Uruguay
+        </p>
+    </footer>
+</body>
+</html>
